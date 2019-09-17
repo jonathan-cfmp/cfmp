@@ -14,7 +14,9 @@
     "@sanity/default-login",
     "@sanity/desk-tool",
     "markdown",
-    "@sanity/color-input"
+    "@sanity/color-input",
+    "@sanity/dashboard",
+    "dashboard-widget-netlify"
   ],
   "parts": [
     {
@@ -24,6 +26,10 @@
     {
       "name": "part:@sanity/desk-tool/structure",
       "path": "./deskStructure.js"
+    },
+    {
+      "implements": "part:@sanity/dashboard/config",
+      "path": "./dashboardConfig.js"
     }
   ]
 }
